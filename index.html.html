@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid bg-primary text-warning ">
+    <img src="/organ logo.jpg"style="width:130px;" class="rounded-pill"><span style="font-size: 100px;">ORGAN SHARING</span>
+  </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link " data-bs-toggle="tab">HOME</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#demo" >SIGN IN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#demo1">ABOUT US</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">COMMON WAITLIST</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-primary" data-bs-toggle="tab" href="#demo3">common waitlist for lungs</a></li>
+            <li><a class="dropdown-item text-primary" data-bs-toggle="tab" href="#demo4">common waitlist for heart and lungs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" data-bs-toggle="tab" href="#demo5">HELPLINE</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" data-bs-toggle="tab" href="#demo6">DONORCARD</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">REPORT</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" data-bs-toggle="tab" href="#demo7">donor report</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="tab" href="#demo8">receiver report</a></li>
+          </ul>
+        </li>
+      </ul>
+<div class="tab-content">
+<div id="demo" class="container tab-pane fade">
+  <img src="/homeorgan.jpg" class="float-end" width="500px" height="500px">
+  <div class="container mt-1">
+    <h2>SIGN IN</h2>
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email"  id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Password:</label>
+        <input type="password"  id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </div>
+<div id="demo1" class="container tab-pane active">
+  <img src="/aboutuspic.jpg" class="rounded" height="300px" width="1500px">
+  <h1 class="text-primary">What is the main purpose of organ donation?</h1>
+<h3 class="text-warning">Donation is the giving of an organ and tissue to help someone that needs a transplant. Transplants can save or transform the life of a person.
+ One organ and tissue donor can help transform the lives of more than 10 people.
+ This relies on donors and their families agreeing to donate their organ and tissue after death.</h3>
+ <h1 class="text-primary">What organs can you share?</h1>
+<h3 class="text-warning">Only a few organs can be transplanted from a living person to another.
+A living donor can donate one of their kidneys, or a portion of their lung, liver, pancreas or intestine.
+ Living kidney donation is the most common living donation and helps save thousands of lives each year.</h3>
+</div>
+<div id="demo2" class="container tab-pane fade">
+  <div class="container mt-1">
+    <h2>FEEDBACK</h2>
+      <div class="mb-3 mt-3">
+        <label for="email">NAME:</label>
+        <input type="name"  id="name" placeholder="Enter name" name="name">
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email"  id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">hospital name:</label>
+        <input type="hosital name"  id="hosp" placeholder="Enter hospital name" name="hosp">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">feedback:</label><br>
+       <textarea rows="5" cols="40"></textarea><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="demo3" class="container tab-pane fade">
+  <div class="container mt-1">
+  <table class="table">
+    <thead>
+      <tr class="table-danger">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>bloodgroup</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-primary">
+        <td>John</td>
+        <td>Doe</td>
+        <td>blood o+</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>blood b</td>
+      </tr>
+      <tr class="table-info">
+        <td>July</td>
+        <td>Dooley</td>
+        <td>blood a</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div id="demo4" class="container tab-pane fade">
+  <div class="container mt-1">
+    <table class="table">
+      <thead>
+        <tr class="table-danger">
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>bloodgroup</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary">
+          <td>arun</td>
+          <td>prasath</td>
+          <td>blood ab+</td>
+        </tr>
+        <tr class="table-warning">
+          <td>krithick</td>
+          <td>ranjan</td>
+          <td>blood b-</td>
+        </tr>
+        <tr class="table-info">
+          <td>saran</td>
+          <td>babu</td>
+          <td>blood a+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div id="demo5" class="container tab-pane fade">
+  <div class="container-fluid   bg-primary text-warning">
+  <span style="font-size: 100px;">helpline</span>
+  </div>
+  <h4>
+    For enquiries regarding waiting list, joining the registry, 
+    organ allocation - Please contact Dr. krithick,
+    Member Secretary,
+    Transplant Authority of Tamilnadu,
+    E-Mail : babu.20msc@kongu.edu</h4><br><br>
+    <h4>
+      For any Technical Support like login, password, problems with entering data on the program or 
+      site not opening or any other technical issues,
+       please contact the technical team between 10.30 am and 6 pm before contacting the Convener of the programme.</h4><br><br>
+       <h4>
+        Mr. arun prasath<br>
+        Website Manager<br>
+        kec<br>
+        Help Line- +91 638163440.
+       </h4>
+</div>
+<div id="demo6" class="container tab-pane fade">
+  <div class="container ">
+    <div class="container-fluid   bg-primary text-warning">
+      <span >add donardetails</span>
+      </div>
+      <div class="mb-3 mt-3 input-group">
+      <label for="email">NAME:</label>
+      <input type="name"  id="name" placeholder="Enter name" name="name">
+      <span class="input-group-text">example: arunprasath</span>
+      </div>
+      <div class="mb-3 mt-3 input-group">
+        <label for="email">Email:</label>
+        <input type="email"  id="email" placeholder="Enter email" name="email">
+        <span class="input-group-text">example: arunprasathd@gmail.com</span>
+      </div>
+      <div class="mb-3 mt-3 input-group">date of birth:</label>
+        <input type="dob"  id="dob" placeholder="Enter dob" name="dob">
+        <span class="input-group-text">example: dd/mm/yyyy</span>
+      </div>
+      <div class="mb-3">
+        <label for="pwd">emergency contact address:</label><br>
+       <textarea rows="5" cols="40"></textarea><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    </div>
+</div>
+</div>
+</body>
+</html
